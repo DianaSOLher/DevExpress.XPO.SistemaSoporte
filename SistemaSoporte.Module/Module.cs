@@ -19,9 +19,10 @@ namespace SistemaSoporte.Module;
 // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ModuleBase.
 public sealed class SistemaSoporteModule : ModuleBase {
     public SistemaSoporteModule() {
-		// 
-		// SistemaSoporteModule
-		// 
+        // 
+        // SistemaSoporteModule
+        // 
+        AdditionalExportedTypes.Add(typeof(DevExpress.Persistent.BaseImpl.OidGenerator));
 		AdditionalExportedTypes.Add(typeof(DevExpress.Persistent.BaseImpl.ModelDifference));
 		AdditionalExportedTypes.Add(typeof(DevExpress.Persistent.BaseImpl.ModelDifferenceAspect));
         AdditionalExportedTypes.Add(typeof(DevExpress.Persistent.BaseImpl.BaseObject));
